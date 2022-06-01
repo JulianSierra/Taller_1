@@ -1,29 +1,24 @@
 Algoritmo T1P3
-	Definir num1, num2, num3 Como Entero
+	definir producto Como Caracter
+	definir precio Como real
+	definir descuento, descuentoFinal Como real
+	definir precioFinal como real
 	
-	Escribir "Ingrese el primer Número Entero"
-	leer num1
-	Escribir "Ingrese el Segundo Número entero"
-	leer num2
-	Escribir "Ingrese el Tercer Número entero"
-	leer num3
+	escribir "Ingrese el producto del cual quiere saber su descuento"
+	leer producto
+	Escribir "Ingrese el precio del producto"
+	leer precio
+	Escribir "Ingrese el porcentaje de descuento que tiene el producto sin el signo %"
+	leer descuento
 	
-	si num1>num2 y num1>num3 entonces
-		escribir " el numero  ",num1 " es el número mayor"
-	SiNo
-		si num2>num1 y num2>num3 Entonces
-			escribir "El numero Mayor es " ,num2
-		SiNo
-			si num3>num1 y num3>num2 Entonces
-				escribir "El numero " ,num3 " es el número mayor"
-			SiNo
-				si num1=num2 y num1=num3 Entonces
-					Escribir "Todos los números son Iguales a  ", num1
-				FinSi
-			FinSi
-		FinSi
-		
-	FinSi
+	descuento = descuento/100
+	descuentoFinal=precio*descuento
+	precioFinal = precio-descuentoFinal
+	
+	Escribir "El precio inicial de su producto ",producto " es de $",precio ", este producto tiene un descuento de ",descuento*100 "%" 
+	Escribir "Usted ha ahorrado $",descuentoFinal " Y su precio ahora es de $",precioFinal
+
+	
 	
 	
 	
